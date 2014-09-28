@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <!--
   Thrust is computed directly by the engine
 -->
+=======
+
+<!-- Thrust is computed directly by the engine -->
+
+>>>>>>> 617bb8a... T-50 version 1.6 update
 <direct name="Direct">
 </direct>

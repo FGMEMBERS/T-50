@@ -2,6 +2,26 @@
 
 <PropertyList>
 
+<<<<<<< HEAD
  <path>Aircraft/T-50/Models/Cockpit.ac</path>
 
+=======
+	<path>Cockpit.ac</path>
+
+	<model>
+		<name>Pilot</name>
+		<path>Aircraft/T-50/Models/Pilot/Pilot.xml</path>
+		<offsets>
+			<x-m> 5</x-m>
+			<y-m> 0.00</y-m>
+			<z-m>0</z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<name>Panel</name>
+		<path>Aircraft/T-50/Models/Panel/Panel.xml</path>
+	</model>
+	
+>>>>>>> 617bb8a... T-50 version 1.6 update
 </PropertyList>

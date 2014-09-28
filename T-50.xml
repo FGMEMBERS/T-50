@@ -5,6 +5,7 @@
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
  <fileheader>
+<<<<<<< HEAD
   <author> Aeromatic v 0.91 </author>
   <filecreationdate> 2011-01-20 </filecreationdate>
   <version>$Revision: 1.10 $</version>
@@ -12,6 +13,16 @@
  </fileheader>
 
 <!--
+=======
+  <author> Ummon Karpe, Petar Jedvaj </author>
+  <filecreationdate> 2012-08-18 </filecreationdate>
+  <version>$Revision: 2.0 $</version>
+  <description> Sukhoi T-50 PAK FA </description>
+ </fileheader>
+
+<!--
+
+>>>>>>> 617bb8a... T-50 version 1.6 update
   File:     T-50.xml
   Inputs:
     name:          T-50
@@ -80,6 +91,57 @@
      <y>   0.00 </y>
      <z> -19.49 </z>
    </location>
+<<<<<<< HEAD
+=======
+    <pointmass name="station1">
+      <weight unit="LBS"> 440 </weight>
+      <location name="POINTMASS" unit="IN">
+          <x> 413 </x>
+          <y> -11 </y>
+          <z>  -7 </z>
+      </location>
+   </pointmass>
+    <pointmass name="station2">
+      <weight unit="LBS"> 440 </weight>
+      <location name="POINTMASS" unit="IN">
+          <x> 413 </x>
+          <y>  11 </y>
+          <z>  -7 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station3">
+      <weight unit="LBS"> 440 </weight>
+      <location name="POINTMASS" unit="IN">
+          <x> 641 </x>
+          <y> -11 </y>
+          <z>  -7 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station4">
+      <weight unit="LBS"> 440 </weight>
+      <location name="POINTMASS" unit="IN">
+          <x> 641 </x>
+          <y>  11 </y>
+          <z>  -7 </z>
+      </location>
+   </pointmass>
+       <pointmass name="station5">
+      <weight unit="LBS"> 230 </weight>
+      <location name="POINTMASS" unit="IN">
+          <x> 413 </x>
+          <y>-106 </y>
+          <z> -15 </z>
+      </location>
+   </pointmass>
+   <pointmass name="station6">
+      <weight unit="LBS"> 230 </weight>
+      <location name="POINTMASS" unit="IN">
+          <x> 413 </x>
+          <y> 106 </y>
+          <z> -15 </z>
+      </location>
+    </pointmass>
+>>>>>>> 617bb8a... T-50 version 1.6 update
  </mass_balance>
 
  <ground_reactions>
@@ -160,7 +222,11 @@
 
  <propulsion>
 
+<<<<<<< HEAD
    <engine file="Saturn_127">
+=======
+   <engine file="Saturn">
+>>>>>>> 617bb8a... T-50 version 1.6 update
     <location unit="IN">
       <x> 719.57 </x>
       <y> -20.00 </y>
@@ -186,7 +252,11 @@
     </thruster>
   </engine>
 
+<<<<<<< HEAD
    <engine file="Saturn_127">
+=======
+   <engine file="Saturn">
+>>>>>>> 617bb8a... T-50 version 1.6 update
     <location unit="IN">
       <x> 719.57 </x>
       <y>  20.00 </y>
@@ -234,8 +304,16 @@
 
  </propulsion>
  
+<<<<<<< HEAD
  <system file="speedbrakes"/>
  <system file="canopy"/>
+=======
+ <system file="Speedbrakes"/>
+ <system file="Chute"/>
+ <system file="Armament"/>
+ <system file="Canopy"/>
+ <system file="Particles"/>
+>>>>>>> 617bb8a... T-50 version 1.6 update
 
  <flight_control name="FCS: T-50">
 
@@ -799,6 +877,19 @@
            <value>0.05</value>
        </product>
     </function>
+<<<<<<< HEAD
+=======
+    
+    <function name="aero/coefficient/CDbc">
+       <description>Drag_due_to_braking_chute</description>
+         <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>systems/chute/unfurl-norm</property>
+           <value>0.63</value>
+         </product>
+    </function>
+>>>>>>> 617bb8a... T-50 version 1.6 update
 
   </axis>
 

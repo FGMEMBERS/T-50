@@ -16,7 +16,10 @@
    },1);
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 617bb8a... T-50 version 1.6 update
 ext_slats = func {
         print ("airspeed");
   airspeed = getprop("/velocities/airspeed-kt");
@@ -32,8 +35,11 @@ ext_slats = func {
 ext_slats;
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 617bb8a... T-50 version 1.6 update
 toggle_canopy = func {
   canopy = aircraft.door.new ("/controls/canopy/",3);
   if(getprop("/controls/canopy/position-norm") > 0) {
