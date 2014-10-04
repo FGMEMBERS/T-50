@@ -1,6 +1,7 @@
 <PropertyList>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Models -->
 
    <path>T-50.ac</path>
@@ -32,6 +33,8 @@
 		<unload>
 		livery_update.stop();
 =======
+=======
+>>>>>>> 0d2654f... chute
 	<!-- Model -->
 
 	<path>T-50.ac</path>
@@ -42,7 +45,11 @@
 	</model>
 	
     <!-- Rembrandt auto switching for glass -->
+<<<<<<< HEAD
 	
+=======
+	<!--
+>>>>>>> 0d2654f... chute
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <condition>
@@ -55,6 +62,7 @@
 		<object-name>front-glass</object-name>
 		<object-name>glass</object-name>
     </effect>
+<<<<<<< HEAD
 	
 	<!-- Lights -->
 	
@@ -62,6 +70,15 @@
 		<path>Aircraft/T-50/Models/Lights/LightPack.xml</path>
 	</model>
 	
+=======
+	-->
+	<!-- Lights -->
+	<!--
+	<model>
+		<path>Aircraft/T-50/Models/Lights/LightPack.xml</path>
+	</model>
+	-->
+>>>>>>> 0d2654f... chute
 	<!-- Effects -->
 	<model>
 		<name>Gear</name>
@@ -361,11 +378,15 @@
       
 			### the rest of your model unload embedded Nasal code ###
 			livery_update.stop();
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</unload>
 	</nasal>
 	
 	<animation>
+<<<<<<< HEAD
 <<<<<<< HEAD
     	<type>material</type>
         <object-name>hull</object-name>
@@ -479,6 +500,8 @@
 		<y2-m> 5.10</y2-m>
 		<z2-m>-0.31</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<type>material</type>
 		<object-name>fuselage</object-name>
 		<object-name>windshield</object-name>
@@ -633,6 +656,7 @@
 			<x2-m>16.1464</x2-m>
 			<y2-m> 6.4546</y2-m>
 			<z2-m> 0.0279</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
 		</axis>
 	</animation>
@@ -668,6 +692,13 @@
 		<y2-m> 3.14</y2-m>
 		<z2-m>-0.34</z2-m>
 =======
+=======
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+>>>>>>> 0d2654f... chute
 		<object-name>left-aileron</object-name>
 		<property>surface-positions/left-aileron-pos-norm</property>
 		<factor>-20</factor>
@@ -759,6 +790,7 @@
 			<x2-m>16.3108</x2-m>
 			<y2-m> 3.2170</y2-m>
 			<z2-m> 0.0384</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
 		</axis>
 	</animation>
@@ -776,11 +808,14 @@
 		<x2-m>16.17</x2-m>
 		<y2-m>-3.14</y2-m>
 		<z2-m>-0.34</z2-m>
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 		<object-name>redge</object-name>
 		<property>surface-positions/flap-pos-norm</property>
 		<factor>40</factor>
@@ -792,6 +827,8 @@
 		<y2-m> 3.38</y2-m>
 		<z2-m>-0.20</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>left-flap</object-name>
 		<property>surface-positions/flap-pos-norm</property>
 		<factor>25</factor>
@@ -819,6 +856,7 @@
 			<x2-m>15.0110</x2-m>
 			<y2-m> 6.4280</y2-m>
 			<z2-m>-0.0470</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
 		</axis>
 	</animation>
@@ -851,6 +889,13 @@
 			<y-m>-2.58</y-m>
 			<z-m> 0.10</z-m>
 =======
+=======
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+>>>>>>> 0d2654f... chute
 		<object-name>left-slat</object-name>
 		<property>surface-positions/flap-pos-norm</property>
 		<factor>15</factor>
@@ -907,7 +952,10 @@
 			<x-m>16.9610</x-m>
 			<y-m> 2.5853</y-m>
 			<z-m> 0.4828</z-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</center>
 		<axis>
 			<x>0</x>
@@ -915,6 +963,7 @@
 			<z>1</z>
 		</axis>
 	</animation>
+<<<<<<< HEAD
 <<<<<<< HEAD
 	
 	<animation>
@@ -927,6 +976,8 @@
 			<y-m> 2.58</y-m>
 			<z-m> 0.10</z-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 
 	<animation>
 		<type>rotate</type>
@@ -937,7 +988,10 @@
 			<x-m>16.9610</x-m>
 			<y-m>-2.5853</y-m>
 			<z-m> 0.4828</z-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</center>
 		<axis>
 			<x>0</x>
@@ -946,6 +1000,7 @@
 		</axis>
 	</animation>
 	
+<<<<<<< HEAD
 <<<<<<< HEAD
 <!-- Elevators -->
 	
@@ -980,6 +1035,8 @@
 		<y2-m> 1.22</y2-m>
 		<z2-m> 0.00</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 	<!-- Elevators -->
 	
 	<animation>
@@ -1046,12 +1103,16 @@
 			<x2-m>17.6047</x2-m>
 			<y2-m> 2.9164</y2-m>
 			<z2-m> 0.0841</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>llerx</object-name>
 		<property>surface-positions/elevator-pos-norm</property>
@@ -1084,6 +1145,8 @@
 			<y>0</y>
 			<z>0</z>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>left-horizontal-stabilizer</object-name>
 		<property>surface-positions/speedbrake-pos-norm</property>
 		<factor>-10</factor>
@@ -1154,11 +1217,15 @@
 			<x2-m>16.1464</x2-m>
 			<y2-m>-6.4546</y2-m>
 			<z2-m> 0.0279</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<type>translate</type>
 		<object-name>bglass</object-name>
@@ -1211,6 +1278,8 @@
 		<y2-m> 0.30</y2-m>
 		<z2-m>-0.73</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<type>rotate</type>
 		<object-name>right-flap</object-name>
 		<property>surface-positions/speedbrake-pos-norm</property>
@@ -1273,12 +1342,16 @@
 			<x2-m> 6.5179</x2-m>
 			<y2-m> 0.3065</y2-m>
 			<z2-m>-0.9373</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>ffldoor</object-name>
 		<property>gear/gear[0]/position-norm</property>
@@ -1308,6 +1381,8 @@
 		<y2-m>-0.30</y2-m>
 		<z2-m>-0.73</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>left-front-gear-door-1</object-name>
 		<property>gear/gear[0]/position-norm</property>
 		<interpolation>
@@ -1335,12 +1410,16 @@
 			<x2-m> 6.5179</x2-m>
 			<y2-m>-0.3065</y2-m>
 			<z2-m>-0.9373</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>fmrdoor</object-name>
 		<property>gear/gear[0]/position-norm</property>
@@ -1366,6 +1445,8 @@
 		<y2-m> 0.30</y2-m>
 		<z2-m>-0.74</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>right-front-gear-door-2</object-name>
 		<property>gear/gear[0]/position-norm</property>
 		<interpolation>
@@ -1389,12 +1470,16 @@
 			<x2-m> 6.5179</x2-m>
 			<y2-m> 0.3065</y2-m>
 			<z2-m>-0.9373</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>fmldoor</object-name>
 		<property>gear/gear[0]/position-norm</property>
@@ -1450,6 +1535,8 @@
 		<y2-m> 2.73</y2-m>
 		<z2-m>-0.58</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>left-front-gear-door-2</object-name>
 		<property>gear/gear[0]/position-norm</property>
 		<interpolation>
@@ -1507,12 +1594,16 @@
 			<x2-m>12.6227</x2-m>
 			<y2-m> 2.2022</y2-m>
 			<z2-m>-0.4393</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>lbdoor</object-name>
 		<property>gear/gear[2]/position-norm</property>
@@ -1720,6 +1811,8 @@
 		<y2-m> 0.60</y2-m>
 		<z2-m>-0.73</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>left-main-gear-door</object-name>
 		<property>gear/gear[2]/position-norm</property>
 		<interpolation>
@@ -1833,12 +1926,16 @@
 			<x2-m>12.9113</x2-m>
 			<y2-m> 0.6029</y2-m>
 			<z2-m>-0.5733</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>flboxdoor</object-name>
 		 <property>baydoors/position-norm</property>
@@ -1864,6 +1961,8 @@
 		<y2-m>-0.60</y2-m>
 		<z2-m>-0.73</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>left-front-weapon-door</object-name>
 		<property>baydoors/position-norm</property>
 		<interpolation>
@@ -1887,12 +1986,16 @@
 			<x2-m>12.9113</x2-m>
 			<y2-m>-0.6029</y2-m>
 			<z2-m>-0.5733</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>brboxdoor</object-name>
 		 <property>baydoors/position-norm</property>
@@ -1918,6 +2021,8 @@
 		<y2-m> 0.59</y2-m>
 		<z2-m>-0.64</z2-m>
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>right-back-weapon-door</object-name>
 		<property>baydoors/position-norm</property>
 		<interpolation>
@@ -1941,12 +2046,16 @@
 			<x2-m>16.8925</x2-m>
 			<y2-m> 0.6066</y2-m>
 			<z2-m>-0.3403</z2-m>
+<<<<<<< HEAD
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+>>>>>>> 0d2654f... chute
 		</axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<object-name>blboxdoor</object-name>
 		<property>baydoors/position-norm</property>
@@ -1975,6 +2084,8 @@
 	</animation>
 
 =======
+=======
+>>>>>>> 0d2654f... chute
 		<object-name>left-back-weapon-door</object-name>
 		<property>baydoors/position-norm</property>
 		<interpolation>
@@ -2000,6 +2111,7 @@
 			<z2-m>-0.3403</z2-m>
 		</axis>
 	</animation>
+<<<<<<< HEAD
 	
 	<model>
 		<name>sonicboom</name>
@@ -2061,4 +2173,7 @@
 	</model>
 	
 >>>>>>> 617bb8a... T-50 version 1.6 update
+=======
+		
+>>>>>>> 0d2654f... chute
 </PropertyList>
