@@ -5,7 +5,7 @@
 	<sim>
 		<description>Sukhoi T-50 PAK FA JSBSim</description>
 		<author>Petar Jedvaj, Ummon Karpe, StuartC</author>
-		<status>1.6</status>
+		<status>1.6.3</status>
 		<rating>
 			<FDM type="int">3</FDM>
 			<systems type="int">2</systems>

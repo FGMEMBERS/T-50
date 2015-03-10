@@ -5,7 +5,7 @@
 	<sim>
 		<description>Sukhoi T-50 PAK FA YASim</description>
 		<author>Petar Jedvaj, Vodoun da Vinci, StuartC</author>
-		<status>1.6</status>
+		<status>1.6.3</status>
 		<rating>
 			<FDM type="int">3</FDM>
 			<systems type="int">2</systems>
@@ -269,13 +269,11 @@
 			<ecam>
 				<display-mode type="string">FUEL</display-mode>
 			</ecam>
-			
 			<nd>
 				<display-mode type="string">VOR</display-mode>
 				<display-mode-knob type="int">2</display-mode-knob>
 				<display-range type="int">40</display-range>
 			</nd>
-			
 			<input>
 				<vor-adf-1 type="int">1</vor-adf-1>
 				<vor-adf-2 type="int">1</vor-adf-2>
@@ -553,4 +551,3 @@
 	</nasal>
 
 </PropertyList>
-

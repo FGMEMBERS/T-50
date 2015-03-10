@@ -4,12 +4,17 @@ var lightsPath = "lightpack/"; #path to the property node, where all internal va
 
 #list of switches for lights - if you don't intend to use some light, assign it nil value instead, like whateverSwitch = nil; and you don't need to care about anything else
 var navSwitch = "/controls/lighting/nav-lights-switch";
-var beaconSwitch = "/controls/lighting/beacon-switch";
-var strobeSwitch = "/controls/lighting/strobe-switch";
+var beaconSwitch = nil;
+var strobeSwitch = nil;
 var landingSwitch = "/controls/lighting/landing-lights-switch";
-var taxiSwitch = nil;
+var taxiSwitch = "/controls/lighting/taxi-light-switch";
 var probeSwitch = nil;
 var whiteSwitch = nil;
+
+#switch this from 1 to 0 if you want to use advanced cyclical fading animation of the the nav lights instead of being stable on when the switch is on
+navStillOn = 1;
+#switch this from 0 to 1 if you want to bind the landing and taxi lights to the landing gear
+gearBind = 0;
 
 
 
@@ -71,13 +76,16 @@ var lightCycle = {
 };
 
 #By default, the switch property is initialized to 1 (only if no value is already assigned). Don't change the class implementation! To override this, set the property manually. You don't need to care if any other code already does it for you. 
-navLights = lightCycle.new(navSwitch, lightsPath~"nav-lights-intensity");
-### Uncomment and tune those to customize times ###
-navLights.fadeIn = 0.0; #fade in time 
-navLights.fadeOut = 0.0; #fade out time
-navLights.stayOn = 100; #stable on period
-navLights.stayOff = 0.0; #stable off period
-#navLights.turnOff = 0.12; #fade out time when turned off
+var navLights = nil;
+if(!navStillOn) {
+	navLights = lightCycle.new(navSwitch, lightsPath~"nav-lights-intensity");
+	### Uncomment and tune those to customize times ###
+	#navLights.fadeIn = 0.4; #fade in time 
+	#navLights.fadeOut = 0.4; #fade out time
+	#navLights.stayOn = 3; #stable on period
+	#navLights.stayOff = 0.6; #stable off period
+	#navLights.turnOff = 0.12; #fade out time when turned off
+}
 
 
 ### BEACON ###
@@ -139,22 +147,30 @@ fadeLanding = lightFadeInOut.new(landingSwitch, lightsPath~"landing-lights-inten
 fadeTaxi = lightFadeInOut.new(taxiSwitch, lightsPath~"taxi-light-intensity");
 fadeProbe = lightFadeInOut.new(probeSwitch, lightsPath~"probe-light-intensity");
 fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
+if(navStillOn) {
+	navLights = lightFadeInOut.new(navSwitch, lightsPath~"nav-lights-intensity");
+	navLights.fadeIn = 0.1;
+	navLights.fadeOut = 0.12;
+}
 #manipulate times if defaults don't fit your needs:
 #fadeLanding.fadeIn = 0.5;
 #fadeLanding.fadeOut = 0.8;
 
 
-print("L-159 light system initialized");
+#enable binding to gear
+if(gearBind) {
+	setlistener("/controls/gear/gear-down", func {
+		gearDown = getprop("/controls/gear/gear-down");
+		if(gearDown) {
+			if(landingSwitch!=nil) setprop(landingSwitch, 1);
+			if(taxiSwitch!=nil) setprop(taxiSwitch, 1);
+		}
+		else{
+			if(landingSwitch!=nil) setprop(landingSwitch, 0);
+			if(taxiSwitch!=nil) setprop(taxiSwitch, 0);
+		}
+	});
+}
 
-setlistener("/controls/gear/gear-down", func {
-	gearDown = getprop("/controls/gear/gear-down");
-	if(gearDown) {
-		if(landingSwitch!=nil) setprop(landingSwitch, 1);
-		if(taxiSwitch!=nil) setprop(taxiSwitch, 1);
-	}
-	else{
-		if(landingSwitch!=nil) setprop(landingSwitch, 0);
-		if(taxiSwitch!=nil) setprop(taxiSwitch, 0);
-	}
-});
+print("Lightpack light system initialized");
 

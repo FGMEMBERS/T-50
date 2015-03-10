@@ -2,21 +2,6 @@
 
 <PropertyList>
 
-<<<<<<< HEAD
-<sim>
-	<model>
-		<livery>
-			<name type="string">Sukhoi OKB</name>
-			<texture>Liveries/Default.png</texture>
-		</livery>
-		<livery-logo>
-			<texture>Liveries/Default.png</texture>
-		</livery-logo>
-	</model>
-</sim>
-
-</PropertyList>
-=======
 	<sim>
 		<model>
 			<livery>
@@ -30,4 +15,3 @@
 	</sim>
 
 </PropertyList>
->>>>>>> 617bb8a... T-50 version 1.6 update
